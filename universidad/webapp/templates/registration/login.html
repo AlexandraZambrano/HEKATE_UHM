@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Great+Vibes&family=Joan&family=Merriweather:wght@300;700;900&family=Nunito:wght@200;300;400;700&family=Open+Sans:ital,wght@0,500;0,600;1,400&family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <title>UHM</title>
+</head>
+
+<body>
+<section class="header">
+    <div class="nav-items">
+        <div class="navbar">
+            <img class="logo" src="{% static './media/LOGOUHM.png' %}" alt="Logo UHM">
+
+            <div class="titulo">
+                <h2>UHM</h2>
+                <h3>Universidad Hékate de Madrid</h3>
+            </div>
+
+        </div>
+
+        <a class="rgt" href="{% url 'nuevoUsuario' %}">Registrate</a>
+
+    </div>
+
+    <div class="presentacion">
+
+        <div class="text-box-1">
+            <h2>Conócenos</h2>
+            <br>
+            <p>Adéntrate en las prácticas milenarias mas tabú de todos los tiempos...
+                Si has llegado hasta aquí no es por casualidad haz sido elegido por tu historia inconsciente de vidas
+                pasadas
+                que permitiran utilizar la magía para modificar tu presente y trabajar tus planos astrales futuros
+                aprendizaje
+                asunto se basa en que la "víctima" siempre decide"
+            </p>
+            <div class="text-img">
+                <img src="{% static 'media/tarot.jpg' %}"
+                     alt="Cartas de Tarot">
+                <img src="{% static 'media/cast.jpg' %}"
+                     alt="Castillo sobre una montaña">
+            </div>
+        </div>
+
+        <div class="login">
+            <form action="" method="POST">
+
+                {% csrf_token %}
+
+                <div class="container">
+                    <label for="username"><b>Usuario:</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+
+                    <br>
+
+                    <label for="password"><b>Clave:</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+
+                    <br>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Recuérdame
+                    </label>
+
+                    <br>
+
+                    <button class="hero-btn" type="submit">LOGIN</button>
+
+                    <br>
+
+                    <span class="psw"><a href="#">¿Has olvidado tu contraseña?</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="Opiniones">
+
+    <div class="text-box-2">
+        <h2>Opiniones de Nuestros <br> Estudiantes</h2>
+    </div>
+
+
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="{% static './media/user1.jpg' %}">
+            <div>
+                <p>Para lanzar un hechizo, basta con apuntar la varita hacia otro participante y decir algo mágico.
+                        Entonces, esa persona decide qué sucederá,
+                        teniendo en cuenta que la mecánica del asunto se basa en que la "víctima" siempre decide
+</p>
+                <h3>Christine Berley</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+
+        </div>
+
+        <div class="testimonials-col">
+            <img src="{% static './media/user2.jpg' %}">
+            <div>
+                <p>Compartir, pociones, hechizos y relatos es sin duda la clave de este aprendizaje
+</p>
+                <h3>David Byer</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

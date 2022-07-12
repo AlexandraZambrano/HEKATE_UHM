@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Joan', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #B790C5;
+}
+
+nav{
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+ul{
+    padding: 25% 0;
+}
+
+.nav-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links li{
+    padding: 20px 70px;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.nav-links li:hover{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 20px 0;
+    padding: 18px 68px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.pag{
+    display: flex;
+    margin-top: 20px;
+}
+
+.container_dcha{
+    background-color: white;
+    width: 1000px;
+    height: 95vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_dcha1{
+    background-color: white;
+    width: 1000px;
+    height: 150vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo img{
+
+     width: 210px;
+     height: 200px;
+     border-radius: 50%;
+     margin-bottom: 30px;
+     border: 2px solid black;
+
+    
+}
+.rectangulo{
+    width: 250px; 
+    height: 100px; 
+    border-radius: 15px;
+    background: #D9D9D9;
+    border: 2px solid black;
+}
+
+.rectangulo h2{
+    font-size: 18px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.profesors_cursos{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.profesors_cursos h3{
+    text-align: center;
+    padding: 10px 10px;
+    color: black;
+    background-color: #B790C5;
+    border-radius: 30px;
+    border: solid black 2px;
+}
+
+table{
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: rgb(207, 203, 203);
+}
+
+.prof{
+    display: flex;
+}
+
+.prof a{
+    text-decoration: none;
+    color: black;
+}
+
+.prof img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-left: 50px;
+    border: 2px solid black;
+}
+
+.nombre h2{
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    justify-content: space-around;
+   }
+
+.materia{
+    background-color: #B790C5;
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-left: 200px;
+    margin-right: 20px;
+    border: 2px solid black;
+}
+
+.materia{
+    text-align: center;
+    align-items: center;
+}
+
+td{
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.profesors_cursos a{
+    text-align: center;
+    padding: 10px 10px;
+    color: black;
+    background-color: #B790C5;
+    border-radius: 30px;
+    border: solid black 2px;
+    text-decoration:none;
+}
+
+.editar{
+    background-color: blue;
+    padding: 0 10px;
+    border: 1;
+}
+
+.editar a{
+    text-decoration:none;
+    color: white;
+}
+
+.eliminar{
+    background-color: red;
+    padding: 0 10px;
+    border: 1;
+}
+
+.eliminar a{
+    text-decoration: none;
+    color: white;
+}

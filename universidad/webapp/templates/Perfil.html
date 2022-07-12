@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Great+Vibes&family=Joan&family=Merriweather:wght@300;700;900&family=Nunito:wght@200;300;400;700&family=Open+Sans:ital,wght@0,500;0,600;1,400&family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css'%}">
+</head>
+
+<body>
+
+    <section class="pag">
+
+        <div class="main-container">
+            <nav class="nav-links">
+                <ul>
+                   <a href="#">
+                    <li>Inicio</li>
+                </a>
+                <a href="/">
+                    <li>Curso</li>
+                </a>
+                <a href="{% url 'docente'  %}">
+                    <li>Docente</li>
+                </a>
+                <a href="{% url 'saliendo'  %}">
+                    <li>Cerrar Sesión</li>
+                </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container_dcha">
+
+            <div class="circulo">
+                <image src="{% static './media/Mteresa.jpg' %}" alt="Maria Teresa" >
+            </div>
+            <div class="rectangulo">
+                <h2>Nombre:</h2>
+                <br>
+                <h2>Materia:</h2>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

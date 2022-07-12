@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docente</title>
+     <link rel="stylesheet" href="{% static 'main.css'%}">
+</head>
+
+<body>
+    <section class="pag">
+
+        <div class="main-container">
+            <nav class="nav-links">
+                <ul>
+                    <a href="{% url 'perfil'  %}">
+                    <li>Inicio</li>
+                </a>
+                <a href="/">
+                    <li>Curso</li>
+                </a>
+                <a href="#">
+                    <li>Docente</li>
+                </a>
+                <a href="{% url 'saliendo'  %}">
+                    <li>Cerrar Sesión</li>
+                </a>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div class="container_dcha1">
+
+            <div class="prof">
+                <img src= "{% static './media/Mteresa.jpg' %}" alt="Cartas de Tarot">
+                <div class="nombre">
+                    <h2>María Teresa <br> Tarot</h2>
+                </div>
+
+                <div class="materia">
+                    <div><a href="#">
+                            <h3>Alquimia</h3>
+                        </a></div>
+                    <div><a href="#">
+                            <h3>Adivinación</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prof">
+                <img src=  "{% static './media/minerva.jpg' %}" alt="Minerva McGonagall">
+                <div class="nombre">
+                    <h2>Minerva <br> McGonagall</h2>
+                </div>
+                <div class="materia">
+                    <div><a href="#">
+                            <h3>Esbats</h3>
+                        </a>
+                    </div>
+                    <div><a href="#">
+                            <h3>Sabbats</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="prof">
+                <img src= "{% static './media/alastor.jpg' %}" alt="Alastor Moody">
+                <div class="nombre">
+                    <h2>Alastor <br> Moody</h2>
+                </div>
+                <div class="materia">
+                    <div><a href="#">
+                            <h3>Artes Oscuras</h3>
+                        </a></div>
+                    <div><a href="#">
+                            <h3>Conjuros y Hechizos</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="prof">
+                <img src= "{% static './media/pomona.jpg' %}" alt="Pomona Sprout">
+                <div class="nombre">
+                    <h2>Pomona <br> Sprout</h2>
+                </div>
+                <div class="materia">
+                    <div><a href="#">
+                            <h3>Prácticas Mágicas de Medicinas</h3>
+                        </a></div>
+                    <div><a href="#"></s>
+                            <h3>Botánica y Hierbas</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="prof">
+                <img src="{% static './media/severus.jpg' %}" alt="Severus Snape">
+                <div class="nombre">
+                    <h2>Severus <br> Snape</h2>
+                </div>
+                <div class="materia">
+                    <div><a href="#">
+                            <h3>Pociones</h3>
+                        </a></div>
+
+                </div>
+            </div>
+            <div class="prof">
+                <img src="{% static './media/cuthbert.jpg' %}" alt="Cuthbert Binns">
+                <div class="nombre">
+                    <h2>Cuthbert <br> Binns</h2>
+                </div>
+                <div class="materia">
+                    <div><a href="#">
+                            <h3>Historia de la Brujería</h3>
+                        </a></div>
+
+                </div>
+            </div>
+
+    </section>
+
+</body>
+
+</html>

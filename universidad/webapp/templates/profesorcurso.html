@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Great+Vibes&family=Joan&family=Merriweather:wght@300;700;900&family=Nunito:wght@200;300;400;700&family=Open+Sans:ital,wght@0,500;0,600;1,400&family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+
+<body>
+
+<section class="pag">
+
+    <div class="main-container">
+        <nav class="nav-links">
+            <ul>
+                <a href="{% url 'perfil'  %}">
+                    <li>Inicio</li>
+                </a>
+                <a href="#">
+                    <li>Curso</li>
+                </a>
+                <a href="{% url 'docente'  %}">
+                    <li>Docente</li>
+                </a>
+                <a href="{% url 'saliendo'  %}">
+                    <li>Cerrar Sesión</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container_dcha">
+        <br>
+        <div class="profesors_cursos">
+            <h3>Historia de brujería</h3>
+        </div>
+        <br>
+        <div class="profesors_cursos">
+
+
+            <a href="NuevoEstudiante/">Añadir Alumno</a>
+
+        </div>
+        <br>
+
+        <div>
+            <p>{{user.username}}</p>
+        </div>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Curso</th>
+                <th>Nota</th>
+            </tr>
+            </thead>
+
+            {% for x in estu %}
+            <tbody>
+            <tr>
+                <td>{{x.nombre}}</td>
+                <td>{{x.apellido_1}}</td>
+                <td>{{x.email}}</td>
+                <td>{{x.asignatura.nombre_asignatura}}</td>
+                <td>{{x.nota}}</td>
+                <td>
+                    <button type="button" class="editar">
+                        <a href="editar/{{x.id}}">Editar</a>
+                    </button>
+                    <button type="button" class="eliminar">
+                        <a href="eliminarestudiante/{{x.id}}">Eliminar</a>
+                    </button>
+                </td>
+            </tr>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+</body>
+
+</html>
