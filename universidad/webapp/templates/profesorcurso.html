@@ -55,38 +55,39 @@
             <h3>¡Bienvenido a Hecate, {{user.username}}!</h3>
         </div>
 
-        <table>
-            <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Email</th>
-                <th>Curso</th>
-                <th>Nota</th>
-            </tr>
-            </thead>
+            <table class="CuadroAlumn">
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Curso</th>
+                    <th>Nota</th>
+                </tr>
+                </thead>
 
-            {% for x in estu %}
-            <tbody>
-            <tr>
-                <td>{{x.nombre}}</td>
-                <td>{{x.apellido_1}}</td>
-                <td>{{x.email}}</td>
-                <td>{{x.asignatura.nombre_asignatura}}</td>
-                <td>{{x.nota}}</td>
-                <td>
-                    <button type="button" class="editar">
-                        <a href="editar/{{x.id}}">Editar</a>
-                    </button>
-                    <button type="button" class="eliminar">
-                        <a href="eliminarestudiante/{{x.id}}">Eliminar</a>
-                    </button>
-                </td>
-            </tr>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
+
+                <tbody>
+                {% for x in estu %}
+                <tr>
+                    <td>{{x.nombre}}</td>
+                    <td>{{x.apellido_1}}</td>
+                    <td>{{x.email}}</td>
+                    <td>{{x.asignatura.nombre_asignatura}}</td>
+                    <td>{{x.nota}}</td>
+
+                    <td><button type="button" class="editar">
+                            <a href="editar/{{x.id}}">Editar</a>
+                        </button><td>
+
+                    <td><button type="button" class="eliminar">
+                            <a href="eliminarestudiante/{{x.id}}">Eliminar</a>
+                        </button></td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
     </div>
 
 </section>
