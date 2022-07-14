@@ -44,9 +44,15 @@
                 <image src="{% static './media/Mteresa.jpg' %}" alt="Maria Teresa" >
             </div>
             <div class="rectangulo">
-                <h2>Nombre:</h2>
+                <h2>Nombre: {{user.username}}</h2>
                 <br>
-                <h2>Materia:</h2>
+
+                {% for asig in asignatura %}
+                    {% if user.id == asig.user.id %}
+                        <h2>Materia: {{asig.nombre_asignatura}}</h2>
+                    {% endif %}
+                {% endfor %}
+
             </div>
         </div>
 

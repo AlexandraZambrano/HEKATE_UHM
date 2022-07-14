@@ -24,7 +24,8 @@ def estudiantes(request):
 
 @login_required
 def perfil(request):
-    return render(request, 'perfil.html')
+    asig = Asignatura.objects.all()
+    return render(request, 'perfil.html', {'asignatura': asig})
 
 @login_required
 def estudianteNuevo(request):
