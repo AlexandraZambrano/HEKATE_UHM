@@ -80,15 +80,21 @@ ul{
     align-items: center;
 }
 
+.prof {
+    margin-top: 15px;
+    margin-bottom: 15px
+
+}
+
 .circulo img{
 
-     width: 210px;
-     height: 200px;
+     width: 200px;
+     height: 180px;
      border-radius: 50%;
      margin-bottom: 30px;
      border: 2px solid black;
 
-    
+
 }
 .rectangulo{
     width: 300px;
@@ -142,28 +148,29 @@ ul{
     height: 150px;
     border-radius: 100px;
     margin-left: 50px;
-    border: 2px solid black;
 }
 
 .nombre h2{
-    margin-left: 50px;
-    width: 150px;
+    margin-top: 10px;
+    margin-left: 80px;
+    width: 200px;
     height: 150px;
     justify-content: space-around;
    }
 
 .materia{
     background-color: #B790C5;
-    width: 300px;
-    height: 60px;
+    width: 260px;
+    height: 50px;
     border-radius: 30px;
     margin-top: 5px;
-    margin-left: 200px;
+    margin-left: 80px;
     margin-right: 20px;
     border: 2px solid black;
 }
 
-.materia{
+.materia h3 {
+    display: grid;
     text-align: center;
     align-items: center;
 }
