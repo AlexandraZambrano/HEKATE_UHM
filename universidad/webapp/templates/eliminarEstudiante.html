@@ -2,24 +2,47 @@
 {% load static %}
 <html lang="en">
 <head>
-    <!--link href="{% static 'img/logotransparente.png' %}"-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!--<link href="{% static 'css/style1.css' %}" rel="stylesheet">-->
+    <link href="{% static 'main.css' %}" rel="stylesheet">
 </head>
 <body>
 
-
-  <div class="caja">
-        <div class="cajita">
-            <form method="POST" class="forma">{% csrf_token %}
-              <h3>¿Seguro desea eliminar el registro de: "{{estudiante.nombre}}"?</h3>
-                <br>
-              <input type="submit" class="otroboton" value="Sí, eliminar">
-              <button class="otroboton"><a href="{% url 'estudiante' %}">Cancelar</a></button>
-            </form>
+    <section class="pag">
+      <div class="main-container">
+          <nav class="nav-links">
+                    <ul>
+                       <a href="#">
+                        <li>Perfil</li>
+                    </a>
+                    <a href="/">
+                        <li>Curso</li>
+                    </a>
+                    <a href="{% url 'docente'  %}">
+                        <li>Docente</li>
+                    </a>
+                    <a href="{% url 'saliendo'  %}">
+                        <li>Cerrar Sesión</li>
+                    </a>
+                    </ul>
+                </nav>
         </div>
-  </div>
+
+      <div class="container_dcha">
+
+            <div class="circulo">
+                <image src="{% static './media/Mteresa.jpg' %}" alt="Maria Teresa" >
+            </div>
+            <div class="rectangulo">
+                <form method="POST" class="forma">{% csrf_token %}
+                    <h3>¿Seguro desea eliminar el registro de: "{{estudiante.nombre}}"?</h3>
+                    <br>
+                    <input type="submit" class="otroboton" value="Sí, eliminar">
+                    <button class="otroboton"><a href="{% url 'estudiante' %}">Cancelar</a></button>
+                </form>
+            </div>
+      </div>
+    </section>
 </body>
 </html>
