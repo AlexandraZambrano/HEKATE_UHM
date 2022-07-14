@@ -38,8 +38,8 @@
                 <form method="POST" class="forma">{% csrf_token %}
                     <h3>¿Seguro desea eliminar el registro de: "{{estudiante.nombre}}"?</h3>
                     <br>
-                    <input type="submit" class="otroboton" value="Sí, eliminar">
-                    <button class="otroboton"><a href="{% url 'estudiante' %}">Cancelar</a></button>
+                    <input type="submit" class="botoneditar1" value="Sí, eliminar">
+                    <button class="botoneditar1"><a href="{% url 'estudiante' %}">Cancelar</a></button>
                 </form>
             </div>
       </div>

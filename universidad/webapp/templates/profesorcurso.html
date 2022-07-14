@@ -5,6 +5,7 @@
 <head>
 
     <meta charset="UTF-8">
+    <title>Curso de profesor</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +53,7 @@
         <br>
 
 
-        <div>
+        <div class="MensajeProf">
             <h3>¡Bienvenido a Hecate, {{user.username}}!</h3>
         </div>
 
@@ -77,11 +78,11 @@
                     <td>{{x.asignatura.nombre_asignatura}}</td>
                     <td>{{x.nota}}</td>
 
-                    <td><button class="botoneditar">
+                    <td><button class="botoneditar1">
                             <a href="editar/{{x.id}}">Editar</a>
                         </button><td>
 
-                    <td><button type="button" class="eliminar">
+                    <td><button class="botoneditar1">
                             <a href="eliminarEstudiante/{{x.id}}">Eliminar</a>
                         </button></td>
                 </tr>
