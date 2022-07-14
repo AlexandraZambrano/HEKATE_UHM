@@ -29,7 +29,6 @@
 
         </div>
 
-        <a class="rgt" href="{% url 'nuevoUsuario' %}">Registrate</a>
 
     </div>
 
@@ -59,6 +58,7 @@
                 {% csrf_token %}
 
                 <div class="container">
+                    <a class="rgt" href="{% url 'nuevoUsuario' %}">Registrate</a>
                     <label for="username"><b>Usuario:</b></label>
                     <input type="text" placeholder="Enter Username" name="username" required>
 
@@ -75,11 +75,15 @@
 
                     <br>
 
-                    <button class="hero-btn" type="submit">LOGIN</button>
+
+                    <button class="hero-btn" type="submit">INICIAR SESIÓN</button>
+
+
+
 
                     <br>
 
-                    <span class="psw"><a href="#">¿Has olvidado tu contraseña?</a></span>
+                    <span class="psw"><a href="contraseña.html">¿Has olvidado tu contraseña?</a></span>
                 </div>
             </form>
         </div>

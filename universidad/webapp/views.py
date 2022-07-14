@@ -12,6 +12,19 @@ from webapp.models import *
 
 #def loginPage(request):
     #return render(request, './registration/login.html')
+#def contraseña(request):
+    #return render(request, 'contraseña.html')
+#def contraseña(request):
+    #if request.method == 'POST':
+        #form = Contraseña(request.POST)
+        #if form.is_valid():
+            #username = form.cleaned_data.get('username')
+            #form.save()
+            #return redirect('/')
+    #else:
+        #form = Contraseña()
+    #context = {'form': form}
+    #return render(request,'contraseña.html', context)
 
 def docente(request):
     return render(request, 'docente.html')
@@ -77,3 +90,5 @@ def register(request):
         form = RegForm()
     context = {'form': form}
     return render(request,'registration/registration2.html', context)
+
+

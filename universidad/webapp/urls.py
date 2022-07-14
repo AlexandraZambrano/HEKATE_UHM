@@ -3,6 +3,8 @@ from django.urls import path
 
 from webapp.views import *
 
+
+
 urlpatterns = [
     #path('', loginPage, name="loginPage"),
     #path('registration/', registration, name="registro"),
@@ -15,4 +17,6 @@ urlpatterns = [
     path('editar/<int:id>', editarEstudiante),
     path('eliminarestudiante/<int:id>', eliminarEstudiante),
     path('salir/', salir, name='saliendo'),
+    #path('contraseña/', contraseña, name='contraseña'),
+
 ]

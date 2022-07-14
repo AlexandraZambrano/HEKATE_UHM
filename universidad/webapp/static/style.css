@@ -126,6 +126,16 @@
     padding: 0;
     position: relative;
 }
+.rgt{
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    height: fit-content;
+    padding: 12px;
+    margin: 35px 35px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
 
 input{
     padding: 10px;
@@ -136,7 +146,7 @@ input{
 .hero-btn{
     background-color: #B790C5;
     padding: 12px;
-    margin: 0 35px;
+    margin: 0px 35px;
     border: 2px solid black;
     border-radius: 8px;
 }
