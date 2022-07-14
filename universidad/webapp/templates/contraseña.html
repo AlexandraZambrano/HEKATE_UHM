@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="regis" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Great+Vibes&family=Joan&family=Merriweather:wght@300;700;900&family=Nunito:wght@200;300;400;700&family=Open+Sans:ital,wght@0,500;0,600;1,400&family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap"
+            rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <title>Document</title>
+</head>
+
+<body>
+<section class="register">
+
+        <span class="sub-titulo">
+            <h1>Crear Usuario</h1>
+        </span>
+
+    <div class="sign-up">
+        <form class="sup" method="POST">
+
+            <div class="container-su">
+
+                {% csrf_token %}
+                {% for field in form %}
+                {{field.label}}
+                {{field}}
+                {% endfor %}
+
+
+                <div class="botones">
+                    <button class="hero-btn-2" type="submit">Registrarme</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>
+
+</html>
