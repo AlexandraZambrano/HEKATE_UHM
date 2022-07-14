@@ -44,13 +44,7 @@
             <h3>Historia de brujería</h3>
         </div>
         <br>
-        <div class="profesors_cursos">
 
-
-            <a href="NuevoEstudiante/">Añadir Alumno</a>
-
-        </div>
-        <br>
 
         <div>
             <h3>¡Bienvenido a Hecate, {{user.username}}!</h3>
@@ -77,7 +71,7 @@
                     <td>{{x.asignatura.nombre_asignatura}}</td>
                     <td>{{x.nota}}</td>
 
-                    <td><button type="button" class="editar">
+                    <td><button class="botoneditar">
                             <a href="editar/{{x.id}}">Editar</a>
                         </button><td>
 
@@ -88,6 +82,10 @@
                 {% endfor %}
                 </tbody>
             </table>
+        <div class="profesors_cursos">
+            <a href="NuevoEstudiante/">Añadir Alumno</a>
+        </div>
+        <br>
 
     </div>
 

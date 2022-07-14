@@ -58,32 +58,28 @@
                 {% csrf_token %}
 
                 <div class="container">
-                    <a class="rgt" href="{% url 'nuevoUsuario' %}">Registrate</a>
-                    <label for="username"><b>Usuario:</b></label>
-                    <input type="text" placeholder="Enter Username" name="username" required>
 
+                    <label for="username"><b>Usuario:</b></label>
+                    <input type="text" placeholder="Ingresar Usuario" name="username" required>
                     <br>
 
                     <label for="password"><b>Clave:</b></label>
-                    <input type="password" placeholder="Enter Password" name="password" required>
-
+                    <input type="password" placeholder="Ingresar Contraseña" name="password" required>
                     <br>
 
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> Recuérdame
                     </label>
-
                     <br>
 
 
                     <button class="hero-btn" type="submit">INICIAR SESIÓN</button>
-
-
-
-
                     <br>
 
-                    <span class="psw"><a href="contraseña.html">¿Has olvidado tu contraseña?</a></span>
+                    <p class="psw"><a href="contraseña.html">¿Has olvidado tu contraseña?</a></p>
+                    <br>
+
+                    <button class="hero-btn" href="{% url 'nuevoUsuario' %}">REGISTRATE</button>
                 </div>
             </form>
         </div>

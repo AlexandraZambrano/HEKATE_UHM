@@ -41,7 +41,7 @@ ul{
 }
 
 .nav-links li:hover{
-    background-color: #D9D9D9;
+    background-color: #B790C5;
     border-radius: 10px;
     border: 2px solid black;
     margin: 20px 0;
@@ -171,7 +171,8 @@ td{
     padding: 10px;
 }
 
-.profesors_cursos a{
+
+.profesors_cursos a {
     text-align: center;
     padding: 10px 10px;
     color: black;
@@ -180,16 +181,22 @@ td{
     border: solid black 2px;
     text-decoration:none;
 }
+.profesors_cursos:hover{
 
-.editar{
-    background-color: blue;
-    padding: 0 10px;
-    border: 1;
-}
-
-.editar a{
-    text-decoration:none;
+    background-color: black;
     color: white;
+    border: solid #000000;
+    border-radius: 30px;
+    }
+
+
+
+.botoneditar a{
+    text-decoration: none;
+    color: #B790C5;
+    padding: 10px 10px;
+    border: 1;
+    background-color: #B790C5;
 }
 
 .eliminar{
