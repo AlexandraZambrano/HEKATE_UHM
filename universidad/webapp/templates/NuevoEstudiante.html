@@ -1,23 +1,33 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Agregar Estudiante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Great+Vibes&family=Joan&family=Merriweather:wght@300;700;900&family=Nunito:wght@200;300;400;700&family=Open+Sans:ital,wght@0,500;0,600;1,400&family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
 </head>
-<body style="  width: 100%;
-    min-height: 100vh;">
+<body>
+    <section class="NuevoEst">
+        <span class="TituloNuevoEst">
+            <h1>Agregar estudiante</h1>
+        </span>
 
-<h1 class="row justify-content-md-center" style="margin-top: 5%">Agregar estudiante</h1>
-<form method="POST">
-  <div class="row mb-3 mt-3 ml-3" style="margin: 0 20%">
-    {{forestudiante}}
-  </div>
-  <div class="d-grid gap-2 col-3 mx-auto">
-    <button type="submit" class="btn btn-primary regular-button">Guardar</button>
-  </div>
-    {% csrf_token %}
-</form>
+        <div class="IngresoDatosEst">
+            <form class="Ind" method="POST">
+
+              <div class="container-ind">
+                {{forestudiante}}
+              </div>
+
+              <div class="botones">
+                <button class="hero-btn-2" type="submit">Guardar</button>
+              </div>
+                {% csrf_token %}
+            </form>
+        </div>
+    </section>
 
 </body>
 </html>
