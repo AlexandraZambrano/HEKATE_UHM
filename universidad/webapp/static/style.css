@@ -56,7 +56,8 @@
 .titulo{
     display: flex;
     flex-direction: column;
-    text-align: center; 
+    text-align: center;
+
 }
 
 .titulo h2{
@@ -70,6 +71,7 @@
 .presentacion{
     display: flex;
     justify-content: space-between;
+
 }
 
 .text-box-1{
@@ -94,6 +96,7 @@
 
 .text-box-1 p{
     font-size: 18px;
+
 }
 
 .text-img img{
