@@ -123,15 +123,51 @@ ul{
 
 }
 
+.MensajeProf h3 {
+    margin-bottom: 15px;
+
+}
+
 .CuadroAlumn {
     width: 80%;
     text-align: center;
     border-collapse: collapse;
     background-color: white;
+    margin-top: 25px;
 }
 
+.profesors_cursos a {
+    text-align: center;
+    padding: 10px 10px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    border: solid black 2px;
+    text-decoration:none;
+}
 
+  botone {text-decoration: none;
+    color: white;
+    background-color: #B790C5;
+    padding: 10px 10px;
+    border: 1;
+    border-radius: 10px;
+    }
 
+.botone a{
+    text-decoration: none;
+    color: #B790C5;
+    padding: 10px 10px;
+    font-size: 10px;
+
+}
+
+td{
+    border: white;
+    padding: 10px;
+}
+
+/*Inicio de Hoja Docente*/
 .prof{
     display: flex;
 }
@@ -173,45 +209,9 @@ ul{
     align-items: center;
 }
 
-td{
-    border: white;
-    padding: 10px;
-}
-
-
-.profesors_cursos a {
-    text-align: center;
-    padding: 10px 10px;
-    color: black;
-    background-color: white;
-    border-radius: 30px;
-    border: solid black 2px;
-    text-decoration:none;
-}
-.profesors_cursos:hover{
-
-    background-color: black;
-    color: white;
-    border: solid #000000;
-    border-radius: 30px;
-    }
+/*Fin de Hoja Docente*/
 
 
 
-.botoneditar a{
-    text-decoration: none;
-    color: #B790C5;
-    padding: 10px 10px;
-    border: 1;
-}
 
-.eliminar{
-    background-color: red;
-    padding: 0 10px;
-    border: 1;
-}
 
-.eliminar a{
-    text-decoration: none;
-    color: white;
-}
