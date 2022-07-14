@@ -96,6 +96,7 @@ def salir(request):
     logout(request)
     return redirect('/')
 
+
 def register(request):
     if request.method == 'POST':
         form = RegForm(request.POST)
@@ -106,7 +107,8 @@ def register(request):
     else:
         form = RegForm()
     context = {'form': form}
-    return render(request,'registration/registration2.html', context)
+    return render(request, 'registration/registration2.html', context)
+
 
 
 @login_required
