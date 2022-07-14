@@ -306,3 +306,41 @@ input{
 }
 /*Fin Registrarse*/
 
+/*Nuevo estudiante*/
+
+.NuevoEst {
+    background-color: #B790C5;
+    width: 100%;
+    height: 100%;
+}
+
+.TituloNuevoEst h1 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 40px;
+}
+
+.Ind {
+    margin: 3% 35%;
+}
+
+.IngresoDatosEst {
+    display: flex;
+    align-items: center;
+    margin: 0%;
+}
+
+.container-ind{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.botonInd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+/*Fin de nuevo estudiante*/
