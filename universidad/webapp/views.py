@@ -1,6 +1,8 @@
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
-
+from django.template.loader import get_template
+from django.http import HttpResponse
+from django.contrib.auth.forms import UserCreationForm
 from .forms import RegForm
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
@@ -66,13 +68,27 @@ def editarEstudiante(request, id):
         formaEstudiantes = RegistroForm(instance=estudiante)
 
     return render(request, 'editar.html', {'forestudiante': formaEstudiantes})
-
+""" 
 @login_required
 def eliminarEstudiante(request, id):
     estudiante = get_object_or_404(Estudiante, pk=id)
     if estudiante:
         estudiante.delete()
         return redirect('estudiante')
+"""
+@login_required
+def eliminarEstudiante(request, id):
+    estudiante = Estudiante.objects.get(pk=id)
+    #estudiante = get_object_or_404(Estudiante, pk=id)
+    #POST request
+    if request.method == "POST":
+        #Confirma eliminar
+        estudiante.delete()
+        messages.success(request, "Registro eliminado correctamente.")
+        return redirect('estudiante')
+    return render(request, "eliminarEstudiante.html", {'estudiante': estudiante})
+
+
 
 @login_required
 def salir(request):
@@ -92,3 +108,24 @@ def register(request):
     return render(request,'registration/registration2.html', context)
 
 
+@login_required
+def busquedaEstudiante(request):
+
+    return render(request, "busquedaEstudiante.html")
+
+@login_required
+def buscar(request):
+
+    if request.GET["estudiantito"]:
+
+        # mensaje = "Estudiante Buscado: %r" %request.GET["estudiantito"]
+        estudiante = request.GET["estudiantito"]
+        if len(estudiante) > 20:
+            mensaje = "Texto de búsqueda demasiado largo"
+        else:
+            estudiantes = Estudiante.objects.filter(nombre__icontains=estudiante)
+            return render(request, "resultadoBusqueda.html", {"estudiantes": estudiantes, "query": estudiante})
+    else:
+        mensaje = "No has introducido nada."
+
+    return HttpResponse(mensaje)

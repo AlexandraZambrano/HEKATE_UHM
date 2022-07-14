@@ -6,8 +6,6 @@ from webapp.views import *
 
 
 urlpatterns = [
-    #path('', loginPage, name="loginPage"),
-    #path('registration/', registration, name="registro"),
 
     path('', estudiantes, name="estudiante"),
     path('registration/', register, name="nuevoUsuario"),
@@ -15,7 +13,9 @@ urlpatterns = [
     path('perfil/', perfil, name="perfil"),
     path('NuevoEstudiante/', estudianteNuevo, name="nuevoEstudiante"),
     path('editar/<int:id>', editarEstudiante),
-    path('eliminarestudiante/<int:id>', eliminarEstudiante),
+    path('eliminarEstudiante/<int:id>', eliminarEstudiante, name='eliminarEstudiante'),
+    path('busquedaEstudiante/', busquedaEstudiante, name='busquedaEstudiante'),
+    path('buscar/', buscar, name='buscar'),
     path('salir/', salir, name='saliendo'),
     #path('contraseña/', contraseña, name='contraseña'),
 

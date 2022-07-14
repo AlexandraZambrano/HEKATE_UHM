@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados</title>
+</head>
+<body>
+    <h3>Resultados Búsqueda</h3>
+    <p>Estás buscando a: <strong>{{query}}</strong></p>
+    {% if estudiantes %}
+        <p>Estudiantes encontrados: {{estudiantes|length}}</p>
+        <ul>
+            {% for estudiante in estudiantes %}
+            <li>
+                {{estudiante.nombre}}
+            </li>
+            {% endfor %}
+        </ul>
+    <!-- Si no hay nada en Estudiantes.-->
+    {% else %}
+        <p>No encontramos a ningún estudiante con ese nombre.</p>
+    {% endif %}
+</body>
+</html>
