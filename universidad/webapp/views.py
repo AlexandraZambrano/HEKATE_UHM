@@ -62,6 +62,7 @@ def editarEstudiante(request, id):
         formaEstudiantes = RegistroForm(request.POST, instance=estudiante)
         if formaEstudiantes.is_valid():
             formaEstudiantes.save()
+            messages.success(request, "Modificado correctamente")
             return redirect('estudiante')
 
     else:
@@ -111,7 +112,7 @@ def register(request):
 @login_required
 def busquedaEstudiante(request):
 
-    return render(request, "busquedaEstudiante.html")
+    return render(request, "profesorcurso.html")
 
 @login_required
 def buscar(request):
