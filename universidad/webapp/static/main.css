@@ -138,14 +138,21 @@ ul{
     margin-top: 25px;
 }
 
-.profesors_cursos a {
+.profecito a {
     text-align: center;
     padding: 10px 10px;
     color: black;
-    background-color: white;
+    text-decoration: none;
+
+}
+
+.profecito {
+
+    background-color: #B790C5;
     border-radius: 30px;
-    border: solid black 2px;
-    text-decoration:none;
+    border: 0px;
+
+
 }
 
   botone {text-decoration: none;
@@ -225,7 +232,7 @@ td{
     color: black;
     background-color: #B790C5;
     padding: 10px 10px;
-    border: 1;
+    border: 0px;
     border-radius: 10px;
     font-weight: bold;
 }
