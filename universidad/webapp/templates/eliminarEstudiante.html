@@ -36,6 +36,7 @@
             </div>
             <div class="rectangulo">
                 <form method="POST" class="forma">{% csrf_token %}
+                    <br>
                     <h3>¿Seguro desea eliminar el registro de: "{{estudiante.nombre}}"?</h3>
                     <br>
                     <input type="submit" class="botoneditar1" value="Sí, eliminar">
