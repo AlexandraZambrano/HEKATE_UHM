@@ -234,11 +234,23 @@ td{
     padding: 10px 10px;
     border: 0px;
     border-radius: 10px;
-    font-weight: bold;
+    font-size: 15px;
 }
 
 .botoneditar1 a{
     text-decoration: none;
     color: black;
+}
+
+.container_smaller {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.hijo {
+    margin-top: 10px;
 }
 

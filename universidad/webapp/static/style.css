@@ -150,8 +150,29 @@ input{
     background-color: #B790C5;
     padding: 12px;
     margin: 0px 35px;
-    border: 2px solid black;
+    border: 0px solid black;
     border-radius: 8px;
+    color: black;
+}
+
+
+.hero-btn a{
+    /*background-color: #B790C5;*/
+    padding: 12px;
+    margin: 0px 35px;
+    border: 0px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.hero-btn a:hover{
+    /*background-color: #B790C5;*/
+    background-color: black;
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 .hero-btn:hover{
