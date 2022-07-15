@@ -222,7 +222,7 @@ td{
 
 .botoneditar1 {
     text-decoration: none;
-    color: white;
+    color: black;
     background-color: #B790C5;
     padding: 10px 10px;
     border: 1;
@@ -232,6 +232,6 @@ td{
 
 .botoneditar1 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
