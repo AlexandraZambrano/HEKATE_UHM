@@ -115,7 +115,7 @@ ul{
 .profesors_cursos{
     display: flex;
     align-self: flex-start;
-    margin-left: 15px;
+    margin-left: -25px;
 }
 
 .profesors_cursos h3{
