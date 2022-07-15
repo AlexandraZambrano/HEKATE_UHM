@@ -35,7 +35,8 @@ def docente(request):
 @login_required
 def estudiantes(request):
     estudiant = Estudiante.objects.all()
-    return render(request, 'profesorcurso.html', {'estu': estudiant})
+    asignatur = Asignatura.objects.all()
+    return render(request, 'profesorcurso.html', {'estu': estudiant, 'asignatura': asignatur})
 
 @login_required
 def perfil(request):
@@ -69,14 +70,7 @@ def editarEstudiante(request, id):
         formaEstudiantes = RegistroForm(instance=estudiante)
 
     return render(request, 'editar.html', {'forestudiante': formaEstudiantes})
-""" 
-@login_required
-def eliminarEstudiante(request, id):
-    estudiante = get_object_or_404(Estudiante, pk=id)
-    if estudiante:
-        estudiante.delete()
-        return redirect('estudiante')
-"""
+
 @login_required
 def eliminarEstudiante(request, id):
     estudiante = Estudiante.objects.get(pk=id)

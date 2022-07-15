@@ -115,7 +115,7 @@ ul{
 .profesors_cursos{
     display: flex;
     align-self: flex-start;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .profesors_cursos h3{
@@ -212,11 +212,13 @@ td{
     border: 2px solid black;
 }
 
-.materia h3 {
+.materia {
     display: grid;
     text-align: center;
     align-items: center;
+    text-size: 20px;
 }
+
 
 /*Fin de Hoja Docente*/
 
