@@ -155,7 +155,8 @@ ul{
 
 }
 
-  botone {text-decoration: none;
+.botone {
+    text-decoration: none;
     color: white;
     background-color: #B790C5;
     padding: 10px 10px;
@@ -179,6 +180,8 @@ td{
 /*Inicio de Hoja Docente*/
 .prof{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .prof a{
@@ -194,12 +197,11 @@ td{
 }
 
 .nombre h2{
-    margin-top: 10px;
     margin-left: 80px;
     width: 200px;
-    height: 150px;
+    height: 50px;
     justify-content: space-around;
-   }
+  }
 
 .materia{
     background-color: #B790C5;
